@@ -1,0 +1,32 @@
+<resources>
+
+    <dimen name="header_text_size">20sp</dimen>
+    <dimen name="font16">16sp</dimen>
+    <dimen name="regular_text_size">14sp</dimen>
+    <dimen name="small_text_size">10sp</dimen>
+
+    <dimen name="icon_big">40dp</dimen>
+
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_12">12dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_24">24dp</dimen>
+    <dimen name="dp_72">72dp</dimen>
+
+    <dimen name="card_w">344dp</dimen>
+    <dimen name="card_h1">178dp</dimen>
+    <dimen name="card_h2">159dp</dimen>
+
+    <dimen name="card_text_w">312dp</dimen>
+    <dimen name="card_text_h1">66dp</dimen>
+    <dimen name="card_text_h2">47dp</dimen>
+    <dimen name="header_text_w">216dp</dimen>
+    <dimen name="replays_w">99dp</dimen>
+
+    <dimen name="top_bot_h">56dp</dimen>
+    <dimen name="bot_icons_mt">15dp</dimen>
+    <dimen name="bot_icons_ml">48dp</dimen>
+    <dimen name="heart_mt">6dp</dimen>
+    <dimen name="name_h">20dp</dimen>
+</resources>
