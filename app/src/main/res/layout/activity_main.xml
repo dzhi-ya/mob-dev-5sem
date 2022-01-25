@@ -6,383 +6,56 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-<!--    TOP-->
-
-    <RelativeLayout
-        android:id="@+id/top"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/top_bot_h"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:layout_width="@dimen/icon_big"
-            android:layout_height="@dimen/icon_big"
-            android:layout_alignParentStart="true"
-            android:layout_marginVertical="@dimen/dp_8"
-            android:layout_marginStart="@dimen/dp_8"
-            android:src="@drawable/ic_back"
-            android:contentDescription="@string/back" />
-
-        <ImageView
-            android:layout_width="@dimen/icon_big"
-            android:layout_height="@dimen/icon_big"
-            android:layout_alignParentEnd="true"
-            android:layout_marginVertical="@dimen/dp_8"
-            android:layout_marginEnd="@dimen/dp_8"
-            android:src="@drawable/ic_search"
-            android:contentDescription="@string/search"/>
-
-        <TextView
-            android:layout_width="@dimen/header_text_w"
-            android:layout_height="@dimen/dp_24"
-            android:layout_centerInParent="true"
-            android:text="@string/header"
-            android:textSize="@dimen/header_text_size" />
-
-    </RelativeLayout>
-
-
-<!--    BOTTOM-->
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/bottom"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/top_bot_h"
-        app:layout_constraintBottom_toBottomOf="parent">
-
-        <ImageView
-            android:id="@+id/b1"
-            android:layout_width="@dimen/dp_24"
-            android:layout_height="@dimen/dp_24"
-            android:layout_marginStart="@dimen/dp_24"
-            android:layout_marginTop="@dimen/bot_icons_mt"
-            android:src="@drawable/ic_shopping"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:contentDescription="@string/shopping"
-            />
-
-        <ImageView
-            android:id="@+id/b2"
-            android:layout_width="@dimen/dp_24"
-            android:layout_height="@dimen/dp_24"
-            android:layout_marginStart="@dimen/bot_icons_ml"
-            android:src="@drawable/ic_book_open_variant"
-            app:layout_constraintStart_toEndOf="@+id/b1"
-            app:layout_constraintTop_toTopOf="@+id/b1"
-            android:contentDescription="@string/book"
-            />
-
-        <ImageView
-            android:id="@+id/b3"
-            android:layout_width="@dimen/dp_24"
-            android:layout_height="@dimen/dp_24"
-            android:layout_marginStart="@dimen/bot_icons_ml"
-            android:src="@drawable/ic_cart"
-            app:layout_constraintStart_toEndOf="@+id/b2"
-            app:layout_constraintTop_toTopOf="@+id/b1"
-            android:contentDescription="@string/cart"
-            />
-
-        <ImageView
-            android:id="@+id/b4"
-            android:layout_width="@dimen/dp_24"
-            android:layout_height="@dimen/dp_24"
-            android:layout_marginStart="@dimen/bot_icons_ml"
-            android:src="@drawable/ic_tag_heart"
-            app:layout_constraintStart_toEndOf="@+id/b3"
-            app:layout_constraintTop_toTopOf="@+id/b1"
-            android:contentDescription="@string/tag_heart"
-            />
-
-        <ImageView
-            android:id="@+id/b5"
-            android:layout_width="@dimen/dp_24"
-            android:layout_height="@dimen/dp_24"
-            android:layout_marginStart="@dimen/bot_icons_ml"
-            android:src="@drawable/ic_heart_filled"
-            app:layout_constraintStart_toEndOf="@+id/b4"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="@dimen/heart_mt"
-            android:contentDescription="@string/heart_filled"
-            />
-
-        <TextView
-            android:layout_width="@dimen/dp_72"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="@dimen/dp_10"
-            android:text="@string/account"
-            android:textSize="@dimen/regular_text_size"
-            android:textColor="@color/blue"
-            android:gravity="center"
-            />
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-<!--    БЛОК С ПОЛЬЗОВАТЕЛЯМИ-->
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/content"
+    <LinearLayout
+        android:id="@+id/header_buttons"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@+id/top"
-        >
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
 
-<!--        ПОЛЬЗОВАТЕЛЬ 1-->
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            android:text="@string/first"
+            app:layout_constraintEnd_toStartOf="@+id/button2" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/c1"
-            android:layout_width="@dimen/card_w"
-            android:layout_height="@dimen/card_h1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="@dimen/dp_16"
-            android:layout_marginHorizontal="@dimen/dp_8"
-            android:background="@drawable/shape"
-            >
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            android:text="@string/second"
+            app:layout_constraintEnd_toStartOf="@+id/button3" />
 
-            <ImageView
-                android:id="@+id/c1_im"
-                android:layout_width="@dimen/icon_big"
-                android:layout_height="@dimen/icon_big"
-                android:src="@drawable/ic_man_1"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="@dimen/dp_12"
-                android:layout_marginStart="@dimen/dp_16"
-                android:contentDescription="@string/avatar"
-                />
-            
-            <TextView
-                android:id="@+id/c1_name"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/name_h"
-                android:text="@string/name1"
-                android:textSize="@dimen/font16"
-                app:layout_constraintStart_toEndOf="@+id/c1_im"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="@dimen/dp_10"
-                android:layout_marginStart="@dimen/dp_16"
-                />
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            android:text="@string/third"
+            app:layout_constraintEnd_toStartOf="@+id/button4" />
 
-            <TextView
-                android:id="@+id/c1_online"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/dp_24"
-                android:text="@string/online1"
-                android:textSize="@dimen/regular_text_size"
-                app:layout_constraintStart_toStartOf="@+id/c1_name"
-                app:layout_constraintTop_toBottomOf="@+id/c1_name"
-                />
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            android:text="@string/fourth"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </LinearLayout>
 
-            <TextView
-                android:layout_width="@dimen/card_text_w"
-                android:layout_height="@dimen/card_text_h1"
-                android:text="@string/text1"
-                android:textSize="@dimen/font16"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="@dimen/dp_72"
-                android:layout_marginHorizontal="@dimen/dp_16"
-                />
-
-            <TextView
-                android:layout_width="@dimen/replays_w"
-                android:layout_height="@dimen/dp_16"
-                android:text="@string/replays"
-                android:textColor="@color/blue"
-                android:textSize="@dimen/small_text_size"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                android:layout_marginStart="@dimen/dp_16"
-                android:layout_marginBottom="@dimen/dp_16"
-                />
-
-            <ImageView
-                android:layout_width="@dimen/dp_24"
-                android:layout_height="@dimen/dp_24"
-                android:src="@drawable/ic_like"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginEnd="@dimen/dp_8"
-                android:layout_marginBottom="@dimen/dp_12"
-                android:contentDescription="@string/like"
-                />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-        <!--        ПОЛЬЗОВАТЕЛЬ 2-->
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/c2"
-            android:layout_width="@dimen/card_w"
-            android:layout_height="@dimen/card_h2"
-            app:layout_constraintStart_toStartOf="@+id/c1"
-            app:layout_constraintTop_toBottomOf="@+id/c1"
-            android:layout_marginTop="@dimen/dp_16"
-            android:background="@drawable/shape"
-            >
-
-            <ImageView
-                android:id="@+id/c2_im"
-                android:layout_width="@dimen/icon_big"
-                android:layout_height="@dimen/icon_big"
-                android:src="@drawable/ic_woman_1"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="@dimen/dp_12"
-                android:layout_marginStart="@dimen/dp_16"
-                android:contentDescription="@string/avatar"
-                />
-
-            <TextView
-                android:id="@+id/c2_name"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/name_h"
-                android:text="@string/name2"
-                android:textSize="@dimen/font16"
-                app:layout_constraintStart_toEndOf="@+id/c2_im"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="@dimen/dp_10"
-                android:layout_marginStart="@dimen/dp_16"
-                />
-
-            <TextView
-                android:id="@+id/c2_online"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/dp_24"
-                android:text="@string/online2"
-                android:textSize="@dimen/regular_text_size"
-                app:layout_constraintStart_toStartOf="@+id/c2_name"
-                app:layout_constraintTop_toBottomOf="@+id/c2_name"
-                />
-
-            <TextView
-                android:layout_width="@dimen/card_text_w"
-                android:layout_height="@dimen/card_text_h2"
-                android:text="@string/text2"
-                android:textSize="@dimen/font16"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="@dimen/dp_72"
-                android:layout_marginHorizontal="@dimen/dp_16"
-                />
-
-            <TextView
-                android:layout_width="@dimen/replays_w"
-                android:layout_height="@dimen/dp_16"
-                android:text="@string/replays"
-                android:textColor="@color/blue"
-                android:textSize="@dimen/small_text_size"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                android:layout_marginStart="@dimen/dp_16"
-                android:layout_marginBottom="@dimen/dp_16"
-                />
-
-            <ImageView
-                android:layout_width="@dimen/dp_24"
-                android:layout_height="@dimen/dp_24"
-                android:src="@drawable/ic_like"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginEnd="@dimen/dp_8"
-                android:layout_marginBottom="@dimen/dp_12"
-                android:contentDescription="@string/like"
-                />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-        <!--        ПОЛЬЗОВАТЕЛЬ 3-->
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/c3"
-            android:layout_width="@dimen/card_w"
-            android:layout_height="@dimen/card_h2"
-            app:layout_constraintStart_toStartOf="@+id/c2"
-            app:layout_constraintTop_toBottomOf="@+id/c2"
-            android:layout_marginTop="@dimen/dp_16"
-            android:background="@drawable/shape"
-            >
-
-            <ImageView
-                android:id="@+id/c3_im"
-                android:layout_width="@dimen/icon_big"
-                android:layout_height="@dimen/icon_big"
-                android:src="@drawable/ic_man_2"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="@dimen/dp_12"
-                android:layout_marginStart="@dimen/dp_16"
-                android:contentDescription="@string/avatar"
-                />
-
-            <TextView
-                android:id="@+id/c3_name"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/name_h"
-                android:text="@string/name3"
-                android:textSize="@dimen/font16"
-                app:layout_constraintStart_toEndOf="@+id/c3_im"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="@dimen/dp_10"
-                android:layout_marginStart="@dimen/dp_16"
-                />
-
-            <TextView
-                android:id="@+id/c3_online"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/dp_24"
-                android:text="@string/online3"
-                android:textSize="@dimen/regular_text_size"
-                app:layout_constraintStart_toStartOf="@+id/c3_name"
-                app:layout_constraintTop_toBottomOf="@+id/c3_name"
-                />
-
-            <TextView
-                android:layout_width="@dimen/card_text_w"
-                android:layout_height="@dimen/card_text_h2"
-                android:text="@string/text2"
-                android:textSize="@dimen/font16"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="@dimen/dp_72"
-                android:layout_marginHorizontal="@dimen/dp_16"
-                />
-
-            <TextView
-                android:layout_width="@dimen/replays_w"
-                android:layout_height="@dimen/dp_16"
-                android:text="@string/replays"
-                android:textColor="@color/blue"
-                android:textSize="@dimen/small_text_size"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                android:layout_marginStart="@dimen/dp_16"
-                android:layout_marginBottom="@dimen/dp_16"
-                />
-
-            <ImageView
-                android:layout_width="@dimen/dp_24"
-                android:layout_height="@dimen/dp_24"
-                android:src="@drawable/ic_like"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginEnd="@dimen/dp_8"
-                android:layout_marginBottom="@dimen/dp_12"
-                android:contentDescription="@string/like"
-                />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container"
+        android:name="com.example.thirdlesson.FirstFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/header_buttons">
+    </androidx.fragment.app.FragmentContainerView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

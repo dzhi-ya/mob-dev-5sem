@@ -1,32 +1,24 @@
 <resources>
-    <string name="app_name">SecondLesson</string>
-
-    <string name="header">Notification</string>
-
-    <string name="name1">Roman Kamushken</string>
-    <string name="name2">Tina Turbina</string>
-    <string name="name3">Tomek Kuwalskij</string>
-
-    <string name="online1">2 days ago</string>
-    <string name="online2">18 minutes ago</string>
-    <string name="online3">2 days ago</string>
-
-    <string name="text1">Check out awesome updates for Android design kit for Figma. Now more screens and more categories.</string>
-    <string name="text2">“into component container and with resizing constraints set????”</string>
-
-    <string name="replays">117 REPLAYS</string>
-
-    <string name="account">Account</string>
+    <string name="app_name">ThirdLesson</string>
 
 
-    <string name="back">back</string>
-    <string name="search">search</string>
-    <string name="avatar">avatar</string>
-    <string name="like">like</string>
-    <string name="shopping">shopping</string>
-    <string name="book">book</string>
-    <string name="cart">cart</string>
-    <string name="tag_heart">tag_heart</string>
-    <string name="heart_filled">heart_filled</string>
+    <string name="operation">+ - * /</string>
+    <string name="back">Назад</string>
+    <string name="next">Далее</string>
+    <string name="firstVal">Введите первое число</string>
+    <string name="secondVal">Введите второе число</string>
+    <string name="text_operation">Выберите математическую операцию</string>
+    <string name="result">Результат</string>
 
+    <string name="first">1</string>
+    <string name="second">2</string>
+    <string name="third">3</string>
+    <string name="fourth">4</string>
+
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="multiply">*</string>
+    <string name="divide">/</string>
+
+    <string name="delete">Удалить</string>
 </resources>

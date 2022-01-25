@@ -1,4 +1,4 @@
-package com.example.secondlesson
+package com.example.thirdlesson
 
 import org.junit.Test
 

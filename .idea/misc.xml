@@ -3,15 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/daria/AndroidStudioProjects/SecondLesson/app/src/main/res/drawable/ic_heart_filled.xml" value="0.2703125" />
-        <entry key="..\:/Users/daria/AndroidStudioProjects/SecondLesson/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
-        <entry key="..\:/Users/daria/AndroidStudioProjects/SecondLesson/app/src/main/res/drawable/shape.xml" value="0.16085526315789472" />
-        <entry key="..\:/Users/daria/AndroidStudioProjects/SecondLesson/app/src/main/res/font/roboto.xml" value="0.17960526315789474" />
-        <entry key="..\:/Users/daria/AndroidStudioProjects/SecondLesson/app/src/main/res/font/roboto_thin.xml" value="0.1013157894736842" />
-        <entry key="..\:/Users/daria/AndroidStudioProjects/SecondLesson/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Users/daria/AndroidStudioProjects/SecondLesson/app/src/main/res/layout/content_main.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/daria/AndroidStudioProjects/SecondLesson/app/src/main/res/layout/fragment_first.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/daria/AndroidStudioProjects/SecondLesson/app/src/main/res/layout/fragment_second.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/daria/AndroidStudioProjects/ThirdLesson/app/src/main/res/layout/activity_main.xml" value="0.329935125115848" />
+        <entry key="..\:/Users/daria/AndroidStudioProjects/ThirdLesson/app/src/main/res/layout/fragment_first.xml" value="0.4" />
+        <entry key="..\:/Users/daria/AndroidStudioProjects/ThirdLesson/app/src/main/res/layout/fragment_fourth.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/daria/AndroidStudioProjects/ThirdLesson/app/src/main/res/layout/fragment_second.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/daria/AndroidStudioProjects/ThirdLesson/app/src/main/res/layout/fragment_start.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/daria/AndroidStudioProjects/ThirdLesson/app/src/main/res/layout/fragment_third.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/daria/AndroidStudioProjects/ThirdLesson/app/src/main/res/layout/third.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
