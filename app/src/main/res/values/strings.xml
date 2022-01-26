@@ -1,24 +1,8 @@
 <resources>
-    <string name="app_name">ThirdLesson</string>
+    <string name="app_name">FourthLesson</string>
 
-
-    <string name="operation">+ - * /</string>
-    <string name="back">Назад</string>
-    <string name="next">Далее</string>
-    <string name="firstVal">Введите первое число</string>
-    <string name="secondVal">Введите второе число</string>
-    <string name="text_operation">Выберите математическую операцию</string>
-    <string name="result">Результат</string>
-
-    <string name="first">1</string>
-    <string name="second">2</string>
-    <string name="third">3</string>
-    <string name="fourth">4</string>
-
-    <string name="plus">+</string>
-    <string name="minus">-</string>
-    <string name="multiply">*</string>
-    <string name="divide">/</string>
-
-    <string name="delete">Удалить</string>
+    <string name="main_navigation">Личности</string>
+    <string name="avatar">avatar</string>
+    <string name="textview">TextView</string>
+    <string name="button">Button</string>
 </resources>
