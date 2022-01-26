@@ -1,9 +1,9 @@
-package com.example.fourthlesson
+package com.example.lessonfour
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.fourthlesson.databinding.PersonCardBinding
+import com.example.lessonfour.databinding.PersonCardBinding
 
 class Adapter(private val activityFunctions: ActivityFunctions): RecyclerView.Adapter<Adapter.PersonViewHolder>() {
     private var personList = PersonHolder.getPersons()

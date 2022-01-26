@@ -1,9 +1,9 @@
-package com.example.fourthlesson
+package com.example.lessonfour
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.fourthlesson.databinding.ActivityMainBinding
+import com.example.lessonfour.databinding.ActivityMainBinding
 import com.google.android.material.snackbar.Snackbar
 
 interface ActivityFunctions {
@@ -25,10 +25,10 @@ class MainActivity : AppCompatActivity() {
 
         adapter = Adapter(object : ActivityFunctions{
             override fun cardEvent(e: String) {
-                Snackbar.make(binding.root, "Нажата карточка: $e", 2000).show()
+                Snackbar.make(binding.root, "Нажата карточка: $e", 1000).show()
             }
             override fun likeEvent(e: String){
-                Snackbar.make(binding.root, "Нажат лайк: $e", 2000).show()
+                Snackbar.make(binding.root, "Нажат лайк: $e", 1000).show()
             }
         })
 
