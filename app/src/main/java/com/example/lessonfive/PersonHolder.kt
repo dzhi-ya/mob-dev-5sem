@@ -1,4 +1,8 @@
-package com.example.lessonfour
+package com.example.lessonfive
+
+import android.util.Log
+
+typealias PersonListener = (person: Person?) -> Unit
 
 data class Person(
     val imgId: Int,
@@ -9,7 +13,8 @@ data class Person(
 
 object PersonHolder {
 
-    private val personsList = mutableListOf<Person>()
+    val personsList = mutableListOf<Person>()
+    private val myListener = mutableSetOf<PersonListener>()
 
     init {
         personsList.add(
@@ -83,7 +88,17 @@ object PersonHolder {
                 "МУЖЧИНА",
                 "Российский государственный, политический и военный деятель. Действующий Президент Российской Федерации, председатель Государственного Совета Российской Федерации и верховный главнокомандующий Вооружёнными силами Российской Федерации с 7 мая 2012 года."))
     }
-    fun getPersons(): MutableList<Person> {
-        return personsList
+
+    fun addListener(listener: PersonListener) {
+        myListener.add(listener)
     }
+
+    fun sendMessage() {
+        Log.i("my_tag", "Send")
+        for (listener in myListener)
+            listener.invoke(personsList.firstOrNull())
+        if (personsList.count() > 0)
+            personsList.removeAt(0)
+    }
+
 }

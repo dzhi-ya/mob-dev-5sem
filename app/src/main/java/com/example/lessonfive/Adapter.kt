@@ -1,12 +1,28 @@
-package com.example.lessonfour
+package com.example.lessonfive
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.lessonfour.databinding.PersonCardBinding
+import com.example.lessonfive.databinding.PersonCardBinding
 
 class Adapter(private val activityFunctions: ActivityFunctions): RecyclerView.Adapter<Adapter.PersonViewHolder>() {
-    private var personList = PersonHolder.getPersons()
+    private var personList = mutableListOf<Person>()
+
+    @SuppressLint("NotifyDataSetChanged")
+    fun addPerson(person: Person)
+    {
+        personList.add(person)
+        notifyDataSetChanged()
+    }
+
+    @SuppressLint("NotifyDataSetChanged")
+    fun getPreviousPersons(prevPersons: MutableList<Person>)
+    {
+        for (person in prevPersons)
+            personList.add(person)
+        notifyDataSetChanged()
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PersonViewHolder {
         val inflater = LayoutInflater.from(parent.context)
