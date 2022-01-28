@@ -1,8 +1,7 @@
 <resources>
-    <string name="app_name">LessonFive</string>
-
-    <string name="main_navigation">Личности</string>
-    <string name="avatar">avatar</string>
-    <string name="textview">TextView</string>
-    <string name="button">Button</string>
+    <string name="app_name">SixthLesson</string>
+    <string name="back_arrow"><![CDATA[<-]]></string>
+    <string name="add_values">Добавление значения</string>
+    <string name="add_btn">Добавить</string>
+    <string name="cancel_btn">Отмена</string>
 </resources>
